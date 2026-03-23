@@ -11,12 +11,19 @@ Features:
 - Uses drag polar model to analyse optimum range speed
 
 Concepts used:
-- Lift equation
-- Drag equation
+- Lift equation ( L = 0.5 * rho * v * v * S * CL )
+- Drag equation ( D = 0.5 * rho * v * v * S * CD ) 
 - Lift-to-Drag ratio
-- Breguet Range Equation
+- Breguet Range Equation ( R = ( v / c ) * ( L / D ) * ln ( Wi / Wo ) )
 - Drag polar ( CD = CD0 + kCL^2 )
 - Parametric analysis
+
+How to Run
+Install required libraries:
+pip install numpy matplotlib
+
+Run the program:
+python aircraft_tool.py
 
 Tools used:
 - Python
@@ -24,3 +31,7 @@ Tools used:
 - NumPy
 
 This project demonstrates the application of programming in aerospace engineering analysis.
+
+Liap Jin Fu
+Diploma in Aerospace Engineering
+Ngee Ann Polytechnic
