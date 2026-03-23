@@ -32,6 +32,12 @@ Tools used:
 
 This project demonstrates the application of programming in aerospace engineering analysis.
 
+What I learned:
+- Self-studied and applied basic Python programming to solve engineering problems 
+- Learned how to model aircraft performance using mathematic formulae
+- Implemented data visualization for graphs using Matplotlib
+- Understood relationship between drag, velocity, and range
+
 Liap Jin Fu
 Diploma in Aerospace Engineering
 Ngee Ann Polytechnic
