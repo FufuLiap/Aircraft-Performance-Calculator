@@ -58,8 +58,10 @@ while True:
     
         rho = float(input("Air density: "))
         v = float(input("Velocity: "))
-
+        
+        # Calculate lift using lift equation
         Lift = 0.5 * rho * v * v * S * CL
+        # Calculate drag using drag equation 
         Drag = 0.5 * rho * v * v * S * CD
 
         print("\nResults:")
@@ -71,8 +73,8 @@ while True:
 
         print("\n === Range Calculator === " )
     
-        CD0 = 0.02 #parasitic drag
-        k = 0.04 #induced drag factor
+        CD0 = 0.02  # parasitic drag
+        k = 0.04    # induced drag factor
     
         v = float(input("Enter flight speed (m/s): "))
         rho = float(input("Air density: "))
@@ -95,11 +97,16 @@ while True:
         drag_list = []
     
         rho = float(input("Air density: "))
-
+        
+        # Loop through velocity range to calculate range for each velocities
         for v in velocity:
+            # Calculate drag at this velocity 
             drag = 0.5 * rho * v * v * S * CD
+            
+            # Store results for plotting
             drag_list.append(drag)
    
+        # Plot Drag vs Velocity graph
         plt.plot(velocity, drag_list)
         plt.title("Drag vs Velocity")
         plt.xlabel("Velocity (m/s)")
@@ -107,6 +114,7 @@ while True:
         plt.savefig("drag_vs_velocity.png")
         plt.show()
         
+        # Find the velocity that gives the minimum drag 
         min_drag = min(drag_list)
         min_drag_velocity = velocity[drag_list.index(min_drag)]
         
@@ -127,7 +135,8 @@ while True:
         Wf = float(input("Final weight (N): "))
         rho = float(input("Air density: "))
         c = float(input("Enter fuel consumption (1/s): "))
-
+        
+        # Loop through velocity range to calculate range for each velocities
         for v in velocity:
                 
             CL_dynamic = (2 * Wi) / ( rho * v * v * S)
@@ -136,8 +145,11 @@ while True:
     
             range_val = ( v / c ) * LD * math.log(Wi/ Wf)
             range_km = range_val / 1000
+            
+            # Store results for plotting
             range_list.append(range_km)
             
+            # Find the velocity that gives the maximum range
             if range_km > max_range:
                 max_range = range_km
                 optimal_velocity = v
@@ -145,7 +157,8 @@ while True:
         print("\n=== Maximum Range Performance === ")
         print("Optimal velocity =", round(optimal_velocity,2),"m/s")
         print("Maximum range =", round(max_range,2),"km")
-    
+        
+        # Plot Drag vs Velocity Graph
         plt.plot(velocity, range_list)
         plt.title("Range vs Velocity")
         plt.xlabel("Velocity (m/s)")
