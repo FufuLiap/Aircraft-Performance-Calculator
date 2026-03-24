@@ -1,4 +1,4 @@
-Aircraft Performance Calculator
+Aircraft Performance Analysis Tool
 
 This project is a Python-based engineering tool developed to analyse basic aircraft performance.
 It calculates  lift, drag, and range for different aircraft at different velocities.
