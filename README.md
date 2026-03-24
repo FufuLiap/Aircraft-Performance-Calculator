@@ -76,7 +76,7 @@ What I learned:
 - Understood relationship between drag, velocity, and range
 
 Future improvements:
-- Add mroe aircraft models
+- Add more aircraft models
 - Add graphical user interface (GUI)
 - Add fuel consumption model
 - Add real aircraft performance data
