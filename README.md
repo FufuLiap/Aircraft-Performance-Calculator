@@ -17,6 +17,27 @@ Features:
 - Optimal velocity calculation for maximum range
 - Export results to CSV file
 
+Screenshots
+(Main menu)
+<img width="407" height="230" alt="image" src="https://github.com/user-attachments/assets/0df2e813-2fa7-46fb-b166-9e5453afdb05" />
+<img width="508" height="432" alt="image" src="https://github.com/user-attachments/assets/69ec2a15-e6f7-44cd-94d9-b62fd762cff7" />
+
+(Lift and Drag calculation result)
+<img width="536" height="570" alt="image" src="https://github.com/user-attachments/assets/4a6cac26-6c84-4caa-bc03-a8ffd58f7972" />
+
+(Range calculation result)
+<img width="591" height="339" alt="image" src="https://github.com/user-attachments/assets/f1d00593-a03c-447d-9a29-d472f5179c2c" />
+
+(Drag vs Velocity graph)
+<img width="797" height="678" alt="image" src="https://github.com/user-attachments/assets/10780051-a09b-4567-8f2a-8545df9c21ff" />
+<img width="494" height="244" alt="image" src="https://github.com/user-attachments/assets/642eefdc-eda1-421d-8baa-6f6705f0483f" />
+
+(Range vs Velocity graph)
+<img width="830" height="1043" alt="image" src="https://github.com/user-attachments/assets/8c1d9a61-a8b1-44c9-ab98-a29a9e0cc1d0" />
+
+(CSV file opened in Excel)
+<img width="1919" height="1145" alt="image" src="https://github.com/user-attachments/assets/220f3c5c-529e-4ab5-9549-2377954aab51" />
+
 Concepts used:
 - Lift equation ( L = 0.5 * rho * v * v * S * CL )
 - Drag equation ( D = 0.5 * rho * v * v * S * CD ) 
